@@ -1,5 +1,14 @@
+import NavBar from "./nav-bar/NavBar";
+
 function App() {
-  return <div>My App</div>;
+  return (
+    <>
+      <header>
+        <NavBar />
+      </header>
+      <main></main>
+    </>
+  );
 }
 
 export default App;
