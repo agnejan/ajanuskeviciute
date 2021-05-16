@@ -9,7 +9,7 @@ function App() {
       <header>
         <NavBar />
       </header>
-      <main>
+      <main className="p-3">
         <Switch>
           <Route path="/">
             <Products />
