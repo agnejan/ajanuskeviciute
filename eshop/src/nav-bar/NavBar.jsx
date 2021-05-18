@@ -10,7 +10,7 @@ function NavBar() {
     <nav className="bg-red-500">
       <ul className="flex">
         {navItems.map((x) => (
-          <NavItem {...x.route} />
+          <NavItem key={x.route} {...x} />
         ))}
       </ul>
     </nav>
