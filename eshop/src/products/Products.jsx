@@ -29,9 +29,11 @@ function Products() {
             >
               {x.title}
             </div>
-            <button>
-              <Link to="/product">View</Link>
-            </button>
+            <div className="text-center">
+              <button>
+                <Link to="/product">View</Link>
+              </button>
+            </div>
           </div>
         </li>
       ))}
