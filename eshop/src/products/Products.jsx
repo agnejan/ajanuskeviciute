@@ -14,9 +14,11 @@ function Products() {
   }, []);
 
   return (
-    <ul>
+    <ul className="flex flex-wrap">
       {products.map((x) => (
-        <li key={x.id}>{x.title}</li>
+        <li key={x.id} className="p-3">
+          <div className="bg-white border shadow-sm rounded w-64 h-80"></div>
+        </li>
       ))}
     </ul>
   );
