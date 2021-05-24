@@ -11,11 +11,11 @@ function App() {
       </header>
       <main className="p-3">
         <Switch>
-          <Route exact path="/vision">
-            <Vision />
-          </Route>
           <Route exact path="/">
             <Products />
+          </Route>
+          <Route exact path="/vision">
+            <Vision />
           </Route>
         </Switch>
       </main>
