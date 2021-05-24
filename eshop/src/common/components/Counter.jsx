@@ -12,7 +12,6 @@ function Counter() {
   }
 
   function handleInputChange(event) {
-    setCount(event.target.valueAsNumber);
     const val = event.target.value;
     if (!val) {
       setCount(1);
