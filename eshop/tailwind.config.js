@@ -3,7 +3,7 @@ module.exports = {
   darkMode: false,
   theme: {
     extend: {
-      height: {
+      maxHeight: {
         "1/4": "25%",
         "2/4": "50%",
         "3/4": "75%",
