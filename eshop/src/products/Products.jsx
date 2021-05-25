@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Card from "../common/components/Card";
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -18,7 +19,7 @@ function Products() {
     <ul className="flex flex-wrap">
       {products.map((x) => (
         <li key={x.id} className="p-3">
-          <div className="bg-white shadow-sm rounded w-64 h-80 p-2">
+          <Card className="w-64 h-80" isRounded>
             <div className="h-3/4">
               <img src={x.image} alt={x.title} className="max-h-full m-auto" />
             </div>
@@ -35,7 +36,7 @@ function Products() {
                 <Link to="/product">View</Link>
               </button>
             </div>
-          </div>
+          </Card>
         </li>
       ))}
     </ul>
