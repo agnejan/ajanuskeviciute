@@ -20,7 +20,7 @@ function Products() {
       {products.map((x) => (
         <li key={x.id} className="p-3">
           <Card className="w-64 h-80" isRounded>
-            <div className="h-3/4">
+            <div className="h-3/4 flex">
               <img src={x.image} alt={x.title} className="max-h-full m-auto" />
             </div>
             <div
@@ -33,7 +33,12 @@ function Products() {
 
             <div className="text-center">
               <button>
-                <Link to="/product">View</Link>
+                <Link
+                  to="/product"
+                  className="text-purple-400 hover:text-green-400 text-sm"
+                >
+                  VIEW
+                </Link>
               </button>
             </div>
           </Card>
