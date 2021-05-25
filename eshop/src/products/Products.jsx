@@ -22,13 +22,14 @@ function Products() {
             <div className="h-3/4">
               <img src={x.image} alt={x.title} className="max-h-full m-auto" />
             </div>
-            <div className="text-center text-xl mt-1">{x.price}$</div>
             <div
-              className=" text-center font-semibold truncate mt-1"
+              className=" text-center font-semibold truncate mt-3"
               title={x.title}
             >
               {x.title}
             </div>
+            <div className="text-center text-md">{x.price}$</div>
+
             <div className="text-center">
               <button>
                 <Link to="/product">View</Link>
