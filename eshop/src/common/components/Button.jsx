@@ -8,7 +8,11 @@ function Button({ className, children, to }) {
   const mergedClasses = clsx(defaultClasses, className);
 
   if (to) {
-    return <Link className={mergedClasses}>{children}</Link>;
+    return (
+      <Link to={to} className={mergedClasses}>
+        {children}
+      </Link>
+    );
   }
 
   return <button className={mergedClasses}>{children}</button>;
