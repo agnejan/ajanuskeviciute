@@ -5,5 +5,5 @@ export const getProducts = {
 
 export const getProduct = (id) => ({
   method: "get",
-  url: `https://fakestoreapi.com/products${id}`,
+  url: `https://fakestoreapi.com/products/${id}`,
 });
