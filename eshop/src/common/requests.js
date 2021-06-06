@@ -3,9 +3,7 @@ export const getProducts = {
   url: "https://fakestoreapi.com/products",
 };
 
-export function getProduct(id) {
-  return {
-    method: "get",
-    url: `https://fakestoreapi.com/products/${id}`,
-  };
-}
+export const getProduct = (id) => ({
+  method: "get",
+  url: `https://fakestoreapi.com/products${id}`,
+});
