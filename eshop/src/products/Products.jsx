@@ -33,7 +33,7 @@ function Products() {
 
             <div className="text-center">
               <Button
-                to="/product"
+                to={`/products/${x.id}`}
                 className="text-purple-500 hover:text-green-400 text-sm"
               >
                 VIEW

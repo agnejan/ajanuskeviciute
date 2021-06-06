@@ -12,14 +12,14 @@ function App() {
       </header>
       <main className="p-3">
         <Switch>
-          <Route exact path="/">
+          <Route exact path={["/", "/products"]}>
             <Products />
+          </Route>
+          <Route exact path="/products/:id">
+            <Product />
           </Route>
           <Route exact path="/vision">
             <Vision />
-          </Route>
-          <Route exact path="/product">
-            <Product />
           </Route>
         </Switch>
       </main>
