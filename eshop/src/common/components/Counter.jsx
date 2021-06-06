@@ -22,9 +22,24 @@ function Counter() {
 
   return (
     <div>
-      <button onClick={handleDecrement}>-</button>
-      <input type="number" value={count} onChange={handleInputChange} />
-      <button onClick={handleIncrement}>+</button>
+      <button
+        onClick={handleDecrement}
+        className="hover:text-green-400 p-2 text-4xl font-extrabold"
+      >
+        -
+      </button>
+      <input
+        type="number"
+        value={count}
+        onChange={handleInputChange}
+        className="text-center text-xl rounded focus:outline-none appearance-none w-16"
+      />
+      <button
+        onClick={handleIncrement}
+        className="hover:text-green-400 p-2 text-4xl font-extrabold"
+      >
+        +
+      </button>
     </div>
   );
 }
