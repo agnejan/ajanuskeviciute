@@ -32,7 +32,7 @@ function Counter() {
         type="number"
         value={count}
         onChange={handleInputChange}
-        className="text-center text-xl rounded focus:outline-none appearance-none w-16"
+        className="text-center text-xl rounded focus:outline-none w-12"
       />
       <button
         onClick={handleIncrement}
