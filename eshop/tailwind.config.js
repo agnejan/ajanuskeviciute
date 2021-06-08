@@ -8,6 +8,9 @@ module.exports = {
         "2/4": "50%",
         "3/4": "75%",
       },
+      maxWidth: {
+        "1/2": "50%",
+      },
     },
   },
   variants: {
