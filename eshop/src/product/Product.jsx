@@ -36,7 +36,7 @@ function Product() {
       </div>
       <div className='pl-3 max-w-1/2'>
         <h1 className='text-2xl mb-4 font-semibold'>{product?.title}</h1>
-        <div className='text-3xl mb-4 font-bold'>{product?.price}$</div>
+        <div className='text-3xl mb-4 font-bold'>$ {product?.price}</div>
         <p className='mb-4'>{product?.description}</p>
         <div className='mb-1 font-semibold'>Quantity:</div>
         <Counter />
