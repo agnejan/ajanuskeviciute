@@ -7,6 +7,7 @@ import Counter from '../common/components/Counter';
 import Button from '../common/components/Button';
 import Spinner from '../common/components/Spinner';
 import useCounter from '../common/hooks/useCounter';
+import ButtonSpinner from '../common/components/ButtonSpinner';
 
 function Product() {
   const { id } = useParams();
@@ -54,7 +55,7 @@ function Product() {
           disabled={isAddToCartLoading}
           onClick={handleAddToCartClick}
         >
-          ADD TO CART
+          {isAddToCartLoading ? <ButtonSpinner /> : 'ADD TO CART'}
         </Button>
       </div>
     </div>
