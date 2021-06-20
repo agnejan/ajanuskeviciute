@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { getProducts } from '../common/requests';
 import ProductCard from './components/ProductCard';
+import Spinner from '../common/components/Spinner';
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -19,7 +20,7 @@ function Products() {
   }, []);
 
   if (isLoading) {
-    return <div>LOADING</div>;
+    return <Spinner text='Fetching products...' />;
   }
 
   return (
