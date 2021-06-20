@@ -13,6 +13,7 @@ function Product() {
   const [product, setProduct] = useState();
   const [isLoading, setIsLoading] = useState(false);
   const counterProps = useCounter();
+  const [isAddToCartLoading, setIsAddToCartLoading] = useState(false);
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -25,9 +26,10 @@ function Product() {
     fetchProduct();
   }, [id]);
 
-  function handleAddToCartClick() {
-    console.log('addtocart', counterProps.count);
-    axios(addToCart());
+  async function handleAddToCartClick() {
+    setIsAddToCartLoading(true);
+    await axios(addToCart(product.id, counterProps.count));
+    setIsAddToCartLoading(false);
   }
 
   if (isLoading) {
@@ -47,7 +49,11 @@ function Product() {
         <p className='mb-4'>{product?.description}</p>
         <div className='mb-1 font-semibold'>Quantity:</div>
         <Counter className='mb-4' {...counterProps} />
-        <Button type='primary' onClick={handleAddToCartClick}>
+        <Button
+          type='primary'
+          disabled={isAddToCartLoading}
+          onClick={handleAddToCartClick}
+        >
           ADD TO CART
         </Button>
       </div>
