@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Button from './Button';
 
 const buttonClass =
-  'text-3xl font-extrabold p-1 transform hover:-translate-y-0.5 active:translate-y-0.5 duration-200';
+  'text-3xl font-extrabold p-1 transform transition hover:-translate-y-0.5 active:translate-y-0.5 duration-200';
 
 function Counter() {
   const [count, setCount] = useState(0);
