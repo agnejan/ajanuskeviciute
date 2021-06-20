@@ -14,12 +14,7 @@ function ProductCard({ id, image, title, price }) {
         <div className='text-center text-md'>$ {price}</div>
 
         <div className='text-center'>
-          <Button
-            to={`/products/${id}`}
-            className='text-purple-500 hover:text-green-400 text-sm'
-          >
-            VIEW
-          </Button>
+          <Button to={`/products/${id}`}>VIEW</Button>
         </div>
       </Card>
     </li>

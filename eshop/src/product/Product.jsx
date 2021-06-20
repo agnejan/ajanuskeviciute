@@ -40,7 +40,7 @@ function Product() {
         <p className='mb-4'>{product?.description}</p>
         <div className='mb-1 font-semibold'>Quantity:</div>
         <Counter className='mb-4' />
-        <Button>ADD TO CART</Button>
+        <Button type='primary'>ADD TO CART</Button>
       </div>
     </div>
   );
