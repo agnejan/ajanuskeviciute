@@ -39,7 +39,7 @@ function Product() {
         <div className='text-3xl mb-4 font-bold'>$ {product?.price}</div>
         <p className='mb-4'>{product?.description}</p>
         <div className='mb-1 font-semibold'>Quantity:</div>
-        <Counter />
+        <Counter className='mb-4' />
         <Button>ADD TO CART</Button>
       </div>
     </div>

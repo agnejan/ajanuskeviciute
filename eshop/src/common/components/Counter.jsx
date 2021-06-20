@@ -4,7 +4,7 @@ import Button from './Button';
 const buttonClass =
   'text-3xl font-extrabold p-1 transform transition hover:-translate-y-0.5 active:translate-y-0.5 duration-200';
 
-function Counter() {
+function Counter({ className }) {
   const [count, setCount] = useState(0);
 
   function handleIncrement() {
@@ -31,7 +31,7 @@ function Counter() {
   }
 
   return (
-    <div>
+    <div className={className}>
       <Button onClick={handleDecrement} className={buttonClass}>
         -
       </Button>
