@@ -8,7 +8,7 @@ function Counter() {
   const [count, setCount] = useState(0);
 
   function handleIncrement() {
-    if (count === '') {
+    if (count <= 0 || count === '') {
       setCount(1);
     } else {
       setCount((prevCount) => prevCount + 1);
@@ -16,7 +16,7 @@ function Counter() {
   }
 
   function handleDecrement() {
-    if (count === 1 || count === '') {
+    if (count <= 1 || count === '') {
       setCount(1);
     } else {
       setCount((prevCount) => prevCount - 1);
